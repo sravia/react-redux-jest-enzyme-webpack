@@ -13,7 +13,7 @@
 VSCode user settings:
 "editor.formatOnSave": true
 
-npm start
-npm build
-npm test
-npm run lint
+- npm start
+- npm build
+- npm test
+- npm run lint

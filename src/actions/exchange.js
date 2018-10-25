@@ -5,6 +5,7 @@ import {
   GET_RATES_SUCCESS,
   GET_RATES_FAILURE
 } from '../constants/ActionTypes';
+import { API_ERROR } from '../constants/Responses';
 
 const API = 'https://api.exchangeratesapi.io/latest';
 
@@ -29,8 +30,8 @@ export const get = () => dispatch => {
     response => {
       dispatch(getRatesSuccess(response.data));
     },
-    error => {
-      dispatch(getRatesFailure(error));
+    () => {
+      dispatch(getRatesFailure(API_ERROR));
     }
   );
 };

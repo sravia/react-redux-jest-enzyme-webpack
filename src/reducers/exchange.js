@@ -4,8 +4,6 @@ import {
   GET_RATES_FAILURE
 } from '../constants/ActionTypes';
 
-import { API_ERROR } from '../constants/Responses';
-
 export const initialState = {
   exchange: {},
   loading: false,
@@ -31,7 +29,7 @@ export default (state = initialState, action) => {
     case GET_RATES_FAILURE:
       return {
         ...state,
-        error: API_ERROR,
+        error: action.error,
         loading: false,
         exchange: {}
       };

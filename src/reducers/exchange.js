@@ -2,7 +2,7 @@ import {
   GET_RATES_REQUEST,
   GET_RATES_SUCCESS,
   GET_RATES_FAILURE
-} from '../constants/ActionTypes';
+} from '../constants/actionTypes';
 
 export const initialState = {
   exchange: {},

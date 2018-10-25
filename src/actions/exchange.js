@@ -4,8 +4,8 @@ import {
   GET_RATES_REQUEST,
   GET_RATES_SUCCESS,
   GET_RATES_FAILURE
-} from '../constants/ActionTypes';
-import { API_ERROR } from '../constants/Responses';
+} from '../constants/actionTypes';
+import { API_ERROR } from '../constants/responses';
 
 const API = 'https://api.exchangeratesapi.io/latest';
 

@@ -7,7 +7,7 @@ import Loading from '../components/loading/Loading';
 import Error from '../components/error/Error';
 import Rates from '../components/rates/Rates';
 
-export class Main extends Component {
+export class App extends Component {
   handleClick = () => {
     const { exchangeActions } = this.props;
     exchangeActions.get();
@@ -32,7 +32,7 @@ export class Main extends Component {
   }
 }
 
-Main.propTypes = {
+App.propTypes = {
   error: PropTypes.string,
   exchange: PropTypes.shape({
     date: PropTypes.string,
@@ -43,7 +43,7 @@ Main.propTypes = {
   exchangeActions: PropTypes.object.isRequired
 };
 
-Main.defaultProps = {
+App.defaultProps = {
   error: '',
   exchange: {},
   loading: false
@@ -65,4 +65,4 @@ const mapDispatchToProps = (dispatch, state) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Main);
+)(App);

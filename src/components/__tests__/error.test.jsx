@@ -1,5 +1,4 @@
 import React from 'react';
-import { expect } from 'chai';
 import Enzyme, { shallow } from 'enzyme';
 import Error from '../error/Error';
 import { API_ERROR } from '../../constants/Responses';
@@ -17,6 +16,6 @@ describe('<Error />', () => {
           <span>{API_ERROR}</span>
         </div>
       )
-    ).to.equal(true);
+    ).toEqual(true);
   });
 });

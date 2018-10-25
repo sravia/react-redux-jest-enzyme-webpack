@@ -1,4 +1,3 @@
-import expect from 'expect';
 import reducer from '../exchange';
 import * as types from '../../constants/ActionTypes';
 import { API_ERROR, TEST_API_RESPONSE } from '../../constants/Responses';

@@ -1,5 +1,4 @@
 import React from 'react';
-import { expect } from 'chai';
 import Enzyme, { shallow } from 'enzyme';
 import Rates from '../rates/Rates';
 import { TEST_API_RESPONSE } from '../../constants/Responses';
@@ -26,6 +25,6 @@ describe('<Rates />', () => {
           </table>
         </div>
       )
-    ).to.equal(true);
+    ).toEqual(true);
   });
 });

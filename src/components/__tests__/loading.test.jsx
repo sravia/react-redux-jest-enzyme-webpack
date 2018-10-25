@@ -1,5 +1,4 @@
 import React from 'react';
-import { expect } from 'chai';
 import Enzyme, { shallow } from 'enzyme';
 import Loading from '../loading/Loading';
 
@@ -16,6 +15,6 @@ describe('<Loading />', () => {
           <span>Loading...</span>
         </div>
       )
-    ).to.equal(true);
+    ).toEqual(true);
   });
 });

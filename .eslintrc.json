@@ -8,6 +8,7 @@
   "parser": "babel-eslint",
   "env": {
     "browser": true,
-    "mocha": true
+    "mocha": true,
+    "jest": true
   }
 }

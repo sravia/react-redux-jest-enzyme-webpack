@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Error /> renders <Error /> component 1`] = `
+<div>
+  <span>
+    Could not fetch latest rates!
+  </span>
+</div>
+`;

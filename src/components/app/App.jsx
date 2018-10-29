@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Loading from '../loading/Loading';
 import Error from '../error/Error';
 import Rates from '../rates/Rates';
 
-export class App extends Component {
+export class App extends PureComponent {
   handleClick = () => {
     const { exchangeActions } = this.props;
     exchangeActions.get();

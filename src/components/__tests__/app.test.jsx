@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import { API_ERROR, TEST_API_RESPONSE } from '../../constants/responses';
-import { App } from '../app/App';
+import App from '../app/App';
 
 const Adapter = require('enzyme-adapter-react-16');
 

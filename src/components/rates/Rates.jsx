@@ -7,10 +7,10 @@ const Rates = ({ rates }) => (
   <div className="rates">
     <table>
       <tbody>
-        {Object.keys(rates).map(key => (
-          <tr key={key}>
-            <td>{key}</td>
-            <td>{rates[key]}</td>
+        {Object.entries(rates).map(([symbol, rate]) => (
+          <tr key={`${symbol}${rate}`}>
+            <td>{symbol}</td>
+            <td>{rate}</td>
           </tr>
         ))}
       </tbody>

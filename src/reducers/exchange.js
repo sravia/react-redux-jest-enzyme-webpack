@@ -7,7 +7,8 @@ import {
 export const initialState = {
   exchange: {},
   loading: false,
-  error: ''
+  error: '',
+  date: null
 };
 
 export default (state = initialState, action) => {

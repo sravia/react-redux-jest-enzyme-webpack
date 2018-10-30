@@ -7,7 +7,7 @@ import {
 } from '../constants/actionTypes';
 import { API_ERROR } from '../constants/responses';
 
-const API = 'https://api.exchangeratesapi.io/latest';
+const API = 'https://api.exchangeratesapi.io/';
 
 export const getRatesSuccess = payload => ({
   type: GET_RATES_SUCCESS,
@@ -23,10 +23,10 @@ export const getRatesRequest = () => ({
   type: GET_RATES_REQUEST
 });
 
-export const get = () => dispatch => {
+export const get = (date = 'latest') => dispatch => {
   dispatch(getRatesRequest());
 
-  return axios.get(API).then(
+  return axios.get(`${API}${date}`).then(
     response => {
       dispatch(getRatesSuccess(response.data));
     },

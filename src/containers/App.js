@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import * as exchangeActionCreator from '../actions/exchange';
 import AppComponent from '../components/app/App';
 
@@ -12,9 +11,9 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = (dispatch, state) => ({
-  exchangeActions: bindActionCreators(exchangeActionCreator, dispatch, state)
-});
+const mapDispatchToProps = {
+  onLoadRates: exchangeActionCreator.get
+};
 
 export default connect(
   mapStateToProps,
